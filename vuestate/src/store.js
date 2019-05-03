@@ -21,6 +21,7 @@ export default new Vuex.Store({
   },
   // these act as setters -- sets the data into the state -- synchronous
   mutations: {
+    // when we add a link, this mutation pushes the new link into our state
     ADD_LINK: (state, link) => {
       state.links.push(link);
     },
